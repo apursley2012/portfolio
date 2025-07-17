@@ -15,19 +15,11 @@ main {
     max-width: 1000px; /* Adjust as needed for overall content width */
 }
 
-h1, h2, h3 {
-    color: #ccff00;
-    font-family: 'NanoPixel', monospace;
-    text-align: center;
-    /* Enhanced glow for headers */
-    text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
-    margin-bottom: 1.5rem;
-}
 
 h1 {
     font-size: 3.5rem;
     color: #ccff00;
-    font-family: 'NanoPixel', monospace;
+    font-family: 'Extrude', monospace;
     text-align: center;
     /* Enhanced glow for headers */
     text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00; 
