@@ -1,92 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - Software Development ePortfolio</title> 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        @font-face {
-            font-family: 'Share Tech Mono';
-            src: url('/assets/fonts/ShareTechMono-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} - Software Development ePortfolio</title>
+  
+  <!-- Google Fonts (clean, consistent retro font options) -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <style>
+    body {
+      background-color: #2a2a2a;
+      color: #ffffff;
+      font-family: 'Share Tech Mono', monospace;
+      margin: 0;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', monospace;
+      color: #ccff00;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 15px #ccff00, 0 0 25px #ccff00;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    .terminal-window {
+      background-color: #0a0a0a;
+      border: 2px solid #808080;
+      border-radius: 5px;
+      padding: 1rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.6);
+      color: #ccff00;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 1rem;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
+      position: relative;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 1rem;
+      background-color: #ccff00;
+      margin-left: 3px;
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Header typing
+      const header = document.getElementById("typed-welcome");
+      const headerText = "Welcome to My Software Development ePortfolio";
+      let i = 0;
+      function typeHeader() {
+        if (i < headerText.length) {
+          header.textContent += headerText.charAt(i);
+          i++;
+          setTimeout(typeHeader, 60);
+        }
+      }
+
+      if (header) {
+        header.textContent = "";
+        typeHeader();
+      }
+
+      // Terminal block typing
+      document.querySelectorAll(".terminal-window[data-content]").forEach((el) => {
+        const content = el.getAttribute("data-content");
+        let j = 0;
+        const output = document.createElement("div");
+        const cursor = document.createElement("span");
+        cursor.className = "cursor";
+        el.innerHTML = "";
+        el.appendChild(output);
+        el.appendChild(cursor);
+
+        function typeTerminal() {
+          if (j < content.length) {
+            output.textContent += content.charAt(j);
+            j++;
+            setTimeout(typeTerminal, 25);
+          } else {
+            cursor.remove();
+          }
         }
 
-	@font-face {
-            font-family: 'Extrude';
-            src: url('assets/fonts/Extrude.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-	    
-        @font-face {
-            font-family: '256 Bytes';
-            src: url('/assets/fonts/256Bytes.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'NanoPix';
-            src: url('/assets/fonts/NanoPix.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'PixelGame';
-            src: url('/assets/fonts/PixelGame.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'SpaceRetroOTF';
-            src: url('/assets/fonts/SpaceRetro.otf') format('opentype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'SpaceRetroTTF';
-            src: url('/assets/fonts/SpaceRetro.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'SpeedPixel';
-            src: url('/assets/fonts/SpeedPixel.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        } 
-    </style>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			const text = "Welcome to My Software Development ePortfolio";
-			const target = document.getElementById("typed-welcome");
-			let i = 0;
-			
-			function typeChar() {
-				if (i < text.length) {
-					target.textContent += text.charAt(i);
-					i++;
-					setTimeout(typeChar, 60);
-				}
-			}
-			
-			if (target) {
-				target.textContent = "";
-				typeChar();
-			}
-		});
-	</script>
+        typeTerminal();
+      });
+    });
+  </script>
 </head>
+
 <body>
-    <main>
-        {{ content }}
-    </main>
+  <main>
+    <h1 id="typed-welcome"></h1>
+
+    <!-- Example Terminal Windows -->
+    <div class="terminal-window" data-content="apursley2012@ePortfolio-PC:~$ cd Software-Dev-ePortfolio
+apursley2012@ePortfolio-PC:~/Software-Dev-ePortfolio$ python
+Python 3.11.4 (tags/v3.11.4)
+>>> path = 'code-review.md'
+>>> file = open(path, 'r')
+>>> print(file.read())
+Opening file...
+Click here to open Code Review">
+    </div>
+
+    <div class="terminal-window" data-content="apursley2012@ePortfolio-PC:~$ python
+>>> import webbrowser
+>>> webbrowser.open('projects/artifacts.html')
+Click here to open Project Artifacts">
+    </div>
+
+    <!-- Your markdown content area -->
+    {{ content }}
+  </main>
 </body>
 </html>
