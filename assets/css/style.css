@@ -27,14 +27,38 @@ h1, h2, h3 {
 }
 
 h1 {
+  color: #ccff00;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #000,     /* 3D shadow (simulated) */
+    0 0 10px #ccff00,   /* glow */
+    0 0 20px #ccff00;   /* more glow */
+  margin-bottom: 1.5rem;
   font-size: 3.5rem;
 }
 
 h2 {
+  color: #ccff00;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #000,     /* 3D shadow (simulated) */
+    0 0 10px #ccff00,   /* glow */
+    0 0 20px #ccff00;   /* more glow */
+  margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
 
 h3 {
+  color: #ccff00;
+  font-family: 'VT323', monospace;
+  text-align: center;
+  text-shadow:
+    2px 2px 0 #000,     /* 3D shadow (simulated) */
+    0 0 10px #ccff00,   /* glow */
+    0 0 20px #ccff00;   /* more glow */
+  margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
 
