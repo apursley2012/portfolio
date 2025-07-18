@@ -52,6 +52,7 @@ p {
   margin-bottom: 3rem;
 }
 
+/*-----------------------------------------------------
 .terminal-window {
   background-color: #0a0a0a;
   padding: 1.5rem;
@@ -95,6 +96,111 @@ p {
   tab-size: 4;
   text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
 }
+/*------------------------------------------------------------------------
+/* Updated terminal window codes */
+.terminal-window {
+            background-color: #c0c0c0;
+            padding: 0;
+            margin: 1.5rem auto;
+            border-radius: 0;
+            max-width: 900px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+            
+            border: 2px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            box-shadow: 
+                inset 1px 1px 0 #dfdfdf,
+                inset -1px -1px 0 #808080,
+                0 0 15px rgba(0, 255, 136, 0.5);
+        }
+
+        .terminal-window:hover {
+            box-shadow: 
+                inset 1px 1px 0 #dfdfdf,
+                inset -1px -1px 0 #808080,
+                0 0 25px rgba(0, 255, 136, 0.8);
+            transform: translateY(-3px);
+        }
+
+        .title-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #c0c0c0;
+            padding: 2px 4px;
+            height: 18px;
+            border-bottom: 1px solid #808080;
+        }
+
+        .title-text {
+            font-family: 'MS Sans Serif', sans-serif;
+            font-size: 11px;
+            font-weight: normal;
+            color: #000000;
+            line-height: 14px;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 2px;
+        }
+
+        .control-btn {
+            width: 13px;
+            height: 12px;
+            background: #c0c0c0;
+            border: 1px solid;
+            border-color: #ffffff #808080 #808080 #ffffff;
+            font-family: 'MS Sans Serif', sans-serif;
+            font-size: 9px;
+            font-weight: bold;
+            color: #000000;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+
+        .control-btn:active {
+            border-color: #808080 #ffffff #ffffff #808080;
+        }
+
+        .minimize-btn {
+            padding-top: 6px;
+        }
+
+        .maximize-btn {
+            font-size: 7px;
+        }
+
+        .close-btn {
+            font-size: 8px;
+        }
+
+        .terminal-window code {
+            display: block;
+            background: #0a0a0a;
+            white-space: pre-wrap;
+            color: #ccff00;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1rem;
+            line-height: 1.4;
+            tab-size: 4;
+            text-shadow: 0 0 5px #ccff00, 0 0 10px #ccff00;
+            padding: 1.5rem;
+            margin: 4px;
+            /* Proper inset grey border around terminal */
+            border: 2px solid;
+            border-color: #808080 #ffffff #ffffff #808080;
+            box-shadow: inset -1px -1px 0 #dfdfdf, inset 1px 1px 0 #404040;
+        }
+
+
 
 /* Markdown Content Styling */
 .markdown-content {
