@@ -26,7 +26,7 @@ h1 {
     -15px -15px 0px black,
     /* All-around glow (adjust blur for desired intensity) */
     0 0 10px #ccff00, /* base glow */
-    0 0 20px #ccff00, /* stronger glow layer */
+    0 0 20px white, /* stronger glow layer */
     0 0 30px #ccff00; /* even stronger glow layer */
 }
   margin-bottom: 1.5rem;
