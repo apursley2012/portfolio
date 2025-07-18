@@ -19,9 +19,16 @@ h1 {
   color: #ccff00;
   font-family: 'Extrude', monospace;
   text-align: center;
-  text-shadow:
-    -6px -6px 0 #000,     /* 3D shadow (simulated) */
-    0 0 10px #ccff00,   /* glow */
+   text-shadow:
+    /* Thick left-and-up black shadow (adjust offsets for desired thickness) */
+    -5px -5px 0px black, 
+    -10px -10px 0px black,
+    -15px -15px 0px black,
+    /* All-around glow (adjust blur for desired intensity) */
+    0 0 10px #ccff00, /* base glow */
+    0 0 20px #ccff00, /* stronger glow layer */
+    0 0 30px #ccff00; /* even stronger glow layer */
+}
   margin-bottom: 1.5rem;
 }
 
