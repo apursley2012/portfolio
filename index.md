@@ -85,9 +85,9 @@ Python 3.11.4 (tags/v3.11.4)
   <div class="window-header">
     <span class="window-title">Professional Self-Assessment</span>
     <div class="window-buttons">
-      <span class="btn minimize">-</span>
-      <span class="btn maximize">▢</span>
-      <span class="btn close">X</span>
+      <span class="btn minimize">\1F5D5</span>
+      <span class="btn maximize">\1F5D6</span>
+      <span class="btn close">\1F5D9</span>
     </div>
   </div>
   <div class="window-terminal">
@@ -108,9 +108,10 @@ Python 3.11.4 (tags/v3.11.4)
   <div class="window-header">
     <span class="window-title">Contact</span>
     <div class="window-buttons">
-      <span class="btn minimize">_</span>
-      <span class="btn maximize">▢</span>
-      <span class="btn close">X</span>
+      <span class="btn minimize">🗕</span>
+      <span class="btn maximize">🗖</span>
+      <span class="btn close">🗙
+</span>
     </div>
   </div>
   <div class="window-terminal">
