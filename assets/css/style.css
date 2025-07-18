@@ -17,7 +17,7 @@ main {
 
 h1 {
   color: #ccff00;
-  font-family: 'Extrude', monospace;
+  font-family: 'Extrude', 'VT323', monospace;
   text-align: center;
    text-shadow:
     /* Thick left-and-up black shadow (adjust offsets for desired thickness) */
