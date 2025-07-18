@@ -15,7 +15,17 @@ main {
   max-width: 1000px;
 }
 
-h1, h2, h3 {
+h1 {
+  color: #ccff00;
+  font-family: 'Extrude', monospace;
+  text-align: center;
+  text-shadow:
+    -6px -6px 0 #000,     /* 3D shadow (simulated) */
+    0 0 10px #ccff00,   /* glow */
+  margin-bottom: 1.5rem;
+}
+
+h2, h3 {
   color: #ccff00;
   font-family: 'VT323', monospace;
   text-align: center;
