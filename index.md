@@ -3,7 +3,7 @@ layout: default
 title: Software Development ePortfolio
 ---
 
-<h1> id="typed-welcome">Welcome to My Software Development ePortfolio</h1>
+<h1 id="typed-welcome">Welcome to My Software Development ePortfolio</h1>
 ---
 
  <div class="intro-text"> 
