@@ -16,7 +16,7 @@ title: Software Development ePortfolio
   <div class="window-header">
     <span class="window-title">Code Review</span>
     <div class="window-buttons">
-      <span class="btn minimize">_</span>
+      <span class="btn minimize">–</span>
       <span class="btn maximize">▢</span>
       <span class="btn close">X</span>
     </div>
@@ -30,7 +30,7 @@ Python 3.11.4 (tags/v3.11.4)
 >>> file = open(path)
 >>> print(file.read())
 
-<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/code-review.md" target="_blank">code-review.md</a><span class="cursor">█</span></code></pre>
+<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/code-review.md" target="_blank">code-review.md</a><span class="cursor">│</span></code></pre>
   </div>
 </div>
 
@@ -39,7 +39,7 @@ Python 3.11.4 (tags/v3.11.4)
   <div class="window-header">
     <span class="window-title">Artifacts</span>
     <div class="window-buttons">
-      <span class="btn minimize">_</span>
+      <span class="btn minimize">–</span>
       <span class="btn maximize">▢</span>
       <span class="btn close">X</span>
     </div>
@@ -53,7 +53,7 @@ Python 3.11.4 (tags/v3.11.4)
 >>> file = open(path)
 >>> print(file.read())
 
-<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/artifacts.md" target="_blank">artifacts.md</a><span class="cursor">█</span></code></pre>
+<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/artifacts.md" target="_blank">artifacts.md</a><span class="cursor">│</span></code></pre>
   </div>
 </div>
 
@@ -62,7 +62,7 @@ Python 3.11.4 (tags/v3.11.4)
   <div class="window-header">
     <span class="window-title">Learning Narratives</span>
     <div class="window-buttons">
-      <span class="btn minimize">_</span>
+      <span class="btn minimize">–</span>
       <span class="btn maximize">▢</span>
       <span class="btn close">X</span>
     </div>
@@ -76,7 +76,7 @@ Python 3.11.4 (tags/v3.11.4)
 >>> file = open(path)
 >>> print(file.read())
 
-<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/narratives.md" target="_blank">narratives.md</a><span class="cursor">█</span></code></pre>
+<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/narratives.md" target="_blank">narratives.md</a><span class="cursor">│</span></code></pre>
   </div>
 </div>
 
@@ -85,7 +85,7 @@ Python 3.11.4 (tags/v3.11.4)
   <div class="window-header">
     <span class="window-title">Professional Self-Assessment</span>
     <div class="window-buttons">
-      <span class="btn minimize">_</span>
+      <span class="btn minimize">-</span>
       <span class="btn maximize">▢</span>
       <span class="btn close">X</span>
     </div>
@@ -99,7 +99,7 @@ Python 3.11.4 (tags/v3.11.4)
 >>> file = open(path)
 >>> print(file.read())
 
-<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/self-assessment.md" target="_blank">self-assessment.md</a><span class="cursor">█</span></code></pre>
+<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/self-assessment.md" target="_blank">self-assessment.md</a><span class="cursor">│</span></code></pre>
   </div>
 </div>
 
@@ -122,6 +122,7 @@ Python 3.11.4 (tags/v3.11.4)
 >>> file = open(path)
 >>> print(file.read())
 
-<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/contact.md" target="_blank">contact.md</a><span class="cursor">█</span></code></pre>
+<a href="https://github.com/apursley2012/Software-Dev-ePortfolio/blob/main/contact.md" 
+target="_blank">contact.md</a><span class="cursor">│</span></code></pre>
   </div>
 </div>
